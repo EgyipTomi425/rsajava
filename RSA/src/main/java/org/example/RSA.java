@@ -6,7 +6,6 @@ import java.util.Base64;
 
 public class RSA
 {
-
     private final static int PRIME_CERTAINTY = 10;
     private final static Random random = new Random();
     // "e" optimalizált bithossza
