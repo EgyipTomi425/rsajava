@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         RSA rsa = new RSA();
 
-        RSA.KulcsPar kulcsPar = RSA.rsaKulcsgeneralas(10);
+        RSA.KulcsPar kulcsPar = RSA.rsaKulcsgeneralas(16);
         System.out.println(kulcsPar);
 
         System.out.println("");
@@ -42,7 +42,7 @@ public class Main {
 
         System.out.println("\n-----------------------------------------------------------------------------------------\n");
 
-        System.out.println("Üzenet részekre bontása 10 bites RSA:");
+        System.out.println("Üzenet részekre bontása 16 bites RSA:");
         System.out.println("Üzenet dekódolás után: " +
                 RSA.visszafejt(RSA.kodol("a", kulcsPar.publicKey), kulcsPar.privateKey) +
                 RSA.visszafejt(RSA.kodol("l", kulcsPar.publicKey), kulcsPar.privateKey) +
@@ -51,7 +51,7 @@ public class Main {
                 RSA.visszafejt(RSA.kodol("f", kulcsPar.publicKey), kulcsPar.privateKey) +
                 RSA.visszafejt(RSA.kodol("a", kulcsPar.publicKey), kulcsPar.privateKey) + "\n");
 
-        System.out.println("\n-------------------------------Gyorshatványozás 15, 23, 55-------------------------------\n");
-        System.out.println(RSA.gyorshatvanyozas(new BigInteger("15"),new BigInteger("23"),new BigInteger("55")));
+        System.out.println("\n-------------------------------Gyorshatványozás 82, 17, 91-------------------------------\n");
+        System.out.println(RSA.gyorshatvanyozas(new BigInteger("82"),new BigInteger("17"),new BigInteger("91")));
     }
 }
