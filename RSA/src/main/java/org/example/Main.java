@@ -51,7 +51,9 @@ public class Main {
                 RSA.visszafejt(RSA.kodol("f", kulcsPar.publicKey), kulcsPar.privateKey) +
                 RSA.visszafejt(RSA.kodol("a", kulcsPar.publicKey), kulcsPar.privateKey) + "\n");
 
-        System.out.println("\n-------------------------------Gyorshatványozás 82, 17, 91-------------------------------\n");
-        System.out.println(RSA.gyorshatvanyozas(new BigInteger("82"),new BigInteger("17"),new BigInteger("91")));
+        System.out.println("\n-------------------------------Gyorshatványozás-------------------------------\n");
+        // A prímek 101 és 277
+        System.out.println(RSA.gyorshatvanyozas(new BigInteger("150"),new BigInteger("13"),new BigInteger("27977")));
+        System.out.println(RSA.gyorshatvanyozas(new BigInteger("23805"),new BigInteger("25477"),new BigInteger("27977")));
     }
 }
